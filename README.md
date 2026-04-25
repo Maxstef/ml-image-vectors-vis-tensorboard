@@ -89,7 +89,30 @@ git clone https://github.com/Maxstef/ml-image-vectors-vis-tensorboard.git
 cd ml-image-vectors-vis-tensorboard
 ```
 
-### 2. (Optional but recommended) Create a virtual environment
+### ⚡ One-command run (recommended)
+
+```bash
+./run.sh
+```
+
+This will:
+- create environment
+- install dependencies
+- download datasets
+- prepare data
+- build embeddings
+- launch TensorBoard
+
+Then open:
+```
+http://localhost:6006
+```
+
+### 🧩 Manual setup (step-by-step)
+
+If you prefer full control, follow these steps:
+
+#### 1. (Optional but recommended) Create a virtual environment
 Using conda:
 
 ```bash
@@ -105,21 +128,21 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 ```
 
-### 3. Install dependencies
+#### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Download datasets
+#### 3. Download datasets
 
-```
+```bash
 python scripts/download_data.py
 ```
 
-### 5. Prepare datasets
+#### 4. Prepare datasets
 
-```
+```bash
 python scripts/prepare_data.py
 ```
 
@@ -128,19 +151,19 @@ This step:
 - normalizes folder structure
 - renames files for consistency
 
-### 6. Build embeddings + Projector files
+#### 5. Build embeddings + Projector files
 
 ```
 python scripts/build_projector.py
 ```
 
 This generates:
-- feature vectors (.tsv)
-- metadata (.tsv)
-- sprite image (.jpg)
-- TensorBoard config (.pbtxt)
+- feature vectors (`.tsv`)
+- metadata (`.tsv`)
+- sprite image (`.jpg`)
+- TensorBoard config (`.pbtxt`)
 
-### 7. Launch TensorBoard
+#### 6. Launch TensorBoard
 
 ```
 tensorboard --logdir ./vis
@@ -225,7 +248,7 @@ While the resources above provide foundational ideas, this project extends them 
 
 ## 🚀 Future improvements
 
-Future improvement might include:
+Future improvement may include:
 
 - Add caching for extracted embeddings
 - Replace ResNet18 with modern vision models (ViT, CLIP)
