@@ -16,7 +16,7 @@ Original sources:
 
 ---
 
-## 🧠 Goal of the project
+## 🎯 Goal of the project
 
 This project is primarily educational and aims to:
 
@@ -26,7 +26,7 @@ This project is primarily educational and aims to:
 
 ---
 
-## 🧠 What this project does
+## ⚙️ What this project does
 
 The pipeline extracts feature vectors from images using a pretrained **ResNet18** model and visualizes them in TensorBoard Projector.
 
@@ -45,27 +45,37 @@ Once running, you can explore:
 - digit groupings (0–9 separation)
 - image similarity in embedding space
 
+![Projector preview](assets/preview.gif)
+
+### Animals embedding space
+
+![Animals](assets/animals.gif)
+
+### Digits embedding space
+
+![Digits](assets/digits.gif)
+
 ---
 
 ## 📁 Project structure
 ```
 .
-├── notebooks/
+├── notebooks/ # exploratory and educational experiments (step-by-step pipeline evolution)
 │ ├── prepare_data.ipynb
 │ ├── build_projector_v0.ipynb
 │ ├── build_projector.ipynb
 │ └── build_projector_legacy.ipynb
 │
-├── scripts/
+├── scripts/ # production-ready reproducible pipeline
 │ ├── download_data.py
 │ ├── prepare_data.py
 │ └── build_projector.py
 │
 ├── vis/ # generated TensorBoard files
-├── images/ # animal dataset
-├── digits/ # digit dataset
-├── requirements.txt
-└── README.md
+├── images/ # animal dataset (not committed, generated via download script)
+├── digits/ # digit dataset (not committed, generated via download script)
+├── requirements.txt # project dependencies
+└── README.md # project documentation
 ```
 
 ---
@@ -75,7 +85,7 @@ Once running, you can explore:
 ### 1. Clone Repo
 
 ```bash
-git https://github.com/Maxstef/ml-image-vectors-vis-tensorboard.git
+git clone https://github.com/Maxstef/ml-image-vectors-vis-tensorboard.git
 cd ml-image-vectors-vis-tensorboard
 ```
 
@@ -149,25 +159,25 @@ This repository includes a set of Jupyter notebooks that document the evolution 
 
 They are intended for **learning and transparency**, showing why certain design decisions were made.
 
-### 📓 `build_projector_legacy.ipynb`
+### 📓 [`build_projector_legacy.ipynb`](https://github.com/Maxstef/ml-image-vectors-vis-tensorboard/blob/main/notebooks/build_projector_legacy.ipynb)
 
 * Original approach based on a Medium article
 * Demonstrates naive implementation and its limitations
 
-### 📓 `build_projector_v0.ipynb`
+### 📓 [`build_projector_v0.ipynb`](https://github.com/Maxstef/ml-image-vectors-vis-tensorboard/blob/main/notebooks/build_projector_v0.ipynb)
 
 * First working full pipeline
 * Manual but deterministic implementation
 
-### 📓 `build_projector.ipynb`
+### 📓 [`build_projector.ipynb`](https://github.com/Maxstef/ml-image-vectors-vis-tensorboard/blob/main/notebooks/build_projector.ipynb)
 
 * Refactored reusable pipeline
 * Supports multiple datasets
 
-### 📓 `prepare_data.ipynb`
+### 📓 [`prepare_data.ipynb`](https://github.com/Maxstef/ml-image-vectors-vis-tensorboard/blob/main/notebooks/prepare_data.ipynb)
 
 * Data ingestion + preprocessing explanation
-* Why dataset normalization is required
+* Why dataset normalization (folder structure, naming, class balance) is required 
 
 ---
 
@@ -189,7 +199,7 @@ This project was inspired by existing approaches to visualizing high-dimensional
 
 ---
 
-### 🧠 Official tools and documentation
+### 📚 Official tools and documentation
 
 * TensorBoard Embedding Projector
   [https://projector.tensorflow.org/](https://projector.tensorflow.org/)
@@ -213,7 +223,7 @@ While the resources above provide foundational ideas, this project extends them 
 
 
 
-## 🧭 Future improvements
+## 🚀 Future improvements
 
 Future improvement might include:
 
