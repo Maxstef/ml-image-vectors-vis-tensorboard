@@ -1,0 +1,19 @@
+embeddings {
+  tensor_name: "animals_resnet18"
+  tensor_path: "animals_feature_vecs.tsv"
+  metadata_path: "animals_metadata.tsv"
+  sprite {
+    image_path: "animals_sprite.jpg"
+    single_image_dim: [100, 100]
+  }
+}
+
+embeddings {
+  tensor_name: "digits_resnet18"
+  tensor_path: "digits_feature_vecs.tsv"
+  metadata_path: "digits_metadata.tsv"
+  sprite {
+    image_path: "digits_sprite.jpg"
+    single_image_dim: [100, 100]
+  }
+}
