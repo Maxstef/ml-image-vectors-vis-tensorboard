@@ -85,8 +85,8 @@ Once running, you can explore:
 ### 1. Clone Repo
 
 ```bash
-git clone https://github.com/Maxstef/ml-image-vectors-vis-tensorboard.git
-cd ml-image-vectors-vis-tensorboard
+git clone https://github.com/Maxstef/tensorboard-image-embeddings.git
+cd tensorboard-image-embeddings
 ```
 
 ### ⚡ One-command run (recommended)
