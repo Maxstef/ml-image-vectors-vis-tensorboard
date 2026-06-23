@@ -182,22 +182,22 @@ This repository includes a set of Jupyter notebooks that document the evolution 
 
 They are intended for **learning and transparency**, showing why certain design decisions were made.
 
-### 📓 [`build_projector_legacy.ipynb`](https://github.com/Maxstef/ml-image-vectors-vis-tensorboard/blob/main/notebooks/build_projector_legacy.ipynb)
+### 📓 [`build_projector_legacy.ipynb`](https://github.com/Maxstef/tensorboard-image-embeddings/blob/main/notebooks/build_projector_legacy.ipynb)
 
 * Original approach based on a Medium article
 * Demonstrates naive implementation and its limitations
 
-### 📓 [`build_projector_v0.ipynb`](https://github.com/Maxstef/ml-image-vectors-vis-tensorboard/blob/main/notebooks/build_projector_v0.ipynb)
+### 📓 [`build_projector_v0.ipynb`](https://github.com/Maxstef/tensorboard-image-embeddings/blob/main/notebooks/build_projector_v0.ipynb)
 
 * First working full pipeline
 * Manual but deterministic implementation
 
-### 📓 [`build_projector.ipynb`](https://github.com/Maxstef/ml-image-vectors-vis-tensorboard/blob/main/notebooks/build_projector.ipynb)
+### 📓 [`build_projector.ipynb`](https://github.com/Maxstef/tensorboard-image-embeddings/blob/main/notebooks/build_projector.ipynb)
 
 * Refactored reusable pipeline
 * Supports multiple datasets
 
-### 📓 [`prepare_data.ipynb`](https://github.com/Maxstef/ml-image-vectors-vis-tensorboard/blob/main/notebooks/prepare_data.ipynb)
+### 📓 [`prepare_data.ipynb`](https://github.com/Maxstef/tensorboard-image-embeddings/blob/main/notebooks/prepare_data.ipynb)
 
 * Data ingestion + preprocessing explanation
 * Why dataset normalization (folder structure, naming, class balance) is required 
